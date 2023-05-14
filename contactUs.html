@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Details Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			background-color: #f2f2f2;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			max-width: 600px;
+			width: 100%;
+			margin: 20px;
+		}
+		input[type="text"], input[type="email"], input[type="date"], select {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+		input[type="submit"] {
+			display: inline-block;
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #0069d9;
+		}
+		label {
+			font-weight: bold;
+			margin-top: 20px;
+		}
+		@media only screen and (max-width: 600px) {
+			form {
+				max-width: 400px;
+			}
+		}
+.ribbon {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+			background-color: #00ffff;
+			color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+		.home-button, .contact-button {
+			display: inline-block;
+			background-color: #fff;
+			color: #007bff;
+			padding: 5px 10px;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		.home-button:hover, .contact-button:hover {
+			background-color: #007bff;
+			color: #fff;
+		}
+		@media only screen and (max-width: 600px) {
+			.ribbon {
+				flex-direction: column;
+				align-items: center;
+			}
+			.home-button, .contact-button {
+				margin: 10px 0;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="ribbon">
+		<a href="login" class="home-button">Home</a>
+		<a href="contactUs.html" class="contact-button">Contact Us</a>
+</div>
+	<div class="container">
+		<form method="POST" action="/contactUs">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required>
+			<label for="age">Age:</label>
+			<input type="text" id="age" name="age" placeholder="Enter your Age" required>
+			<label for="gender">Gender:</label>
+			<select id="gender" name="gender" required>
+				<option value="">Select gender</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+			<label for="grade">Grade:</label>
+			<input type="text" id="grade" name="grade" placeholder="Enter your Grade" required>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
