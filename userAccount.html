@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logged In</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			background-color: #f2f2f2;
+		}
+		.message {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			max-width: 600px;
+			width: 100%;
+			padding: 20px;
+			margin: 20px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 2.5rem;
+			margin: 0;
+		}
+		p {
+			font-size: 1.5rem;
+			margin: 20px 0;
+		}
+		a {
+			display: inline-block;
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			text-decoration: none;
+			cursor: pointer;
+		}
+		a:hover {
+			background-color: #0069d9;
+		}
+		@media only screen and (max-width: 600px) {
+			.message {
+				max-width: 400px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="message">
+			<h1>You are logged in!</h1>
+			<p>Thank you for logging in. You now have access to your account.</p>
+			<a href="login.html">Log out</a>
+		</div>
+	</div>
+</body>
+</html>
