@@ -16,7 +16,7 @@ The following tools were used to create the application:
     Flask web python framework for Backend
     Html for front end
     MySQL database
-    Heroku/Github service for hosting
+    PythonAnywhere service for hosting
 
     
 
